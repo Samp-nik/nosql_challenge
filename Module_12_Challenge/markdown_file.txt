@@ -1,0 +1,33 @@
+Last login: Sat Dec  9 16:43:01 on ttys002
+(base) sample@Nikhils-Laptop Resources % mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json
+2023-12-09T17:57:51.860-0500	connected to: mongodb://localhost/
+2023-12-09T17:57:51.861-0500	dropping: uk_food.establishments
+2023-12-09T17:57:53.563-0500	39779 document(s) imported successfully. 0 document(s) failed to import.
+
+
+uk_food> db.dropDatabase()
+{ ok: 1, dropped: 'uk_food' }
+uk_food> db.find_one()
+TypeError: db.find_one is not a function
+uk_food> show dbs
+admin        40.00 KiB
+autosaurus  152.00 KiB
+config      108.00 KiB
+local        72.00 KiB
+travel_db    40.00 KiB
+uk_food> db.dropDatabase()
+{ ok: 1, dropped: 'uk_food' }
+uk_food> show dbs
+admin        40.00 KiB
+autosaurus  152.00 KiB
+config       72.00 KiB
+local        72.00 KiB
+travel_db    40.00 KiB
+uk_food> show dbs
+admin        40.00 KiB
+autosaurus  152.00 KiB
+config       72.00 KiB
+local        72.00 KiB
+travel_db    40.00 KiB
+uk_food       8.31 MiB
+uk_food> 
